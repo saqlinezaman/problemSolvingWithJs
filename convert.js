@@ -6,3 +6,10 @@ inchToHeight=(inch)=>{
 }
 const myHeight = inchToHeight(75);
 console.log(myHeight);
+
+milsToKm=(mile)=>{
+    const km = mile*1.60934;
+    return km;
+}
+const dhakaToChittogong = milsToKm(180);
+console.log(dhakaToChittogong);
