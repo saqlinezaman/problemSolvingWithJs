@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From</title>
+    <style>
+        .div{
+            margin-bottom: 10px;
+        }
+        body{
+            display: flex;
+            min-height: 90vh;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            padding: 10px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body >
+    <form action="" id="myForm">
+          <h2>Student From</h2>
+        <div class="div">
+               <label for="">Name</label><br>
+               <input type="text" id="name"><br>
+        </div>
+        <div class="div">
+            <label for="">Course</label>
+            <select name="" id="course">
+                <option value="MBA">MBA</option>
+                <option value="BBA">BBA</option>
+                <option value="MBA">CSE</option>
+                <option value="MBA">CSE</option>
+            </select><br>
+        </div>
+        <div class="div">
+            <label for="">Gender</label>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+        </div><br>
+        <div class="">
+            <Label>Subject</Label>
+             <input type="checkbox" name="subject" value="Bangla"> Bangla
+             <input type="checkbox" name="subject" value="English"> English
+        </div>     
+        <div class="div">
+               <label for="">Address</label><br>
+               <textarea cols="" rows="3" name="" id="address"></textarea><br>
+        </div>
+        <button type="button" onclick="saveData()">Submit</button>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
