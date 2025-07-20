@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Factorial Number Calculate</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		const number = parseInt(prompt("Enter a positive Integer"));
+
+		if(number < 0)
+		{
+			document.write("Error! Factorial for negetive number does not exists");
+		}
+
+		else if(number == 0)
+		{
+			document.write(`The Factorial of ${number} is 1`);
+		}
+
+		else
+		{
+			let fact = 1;
+			for (var i = 1; i <= number; i++)
+			{
+				fact*= i;
+			}
+
+			document.write(`The Factorial of ${number} is ${fact}`);
+		}
+	</script>
+
+</body>
+</html>
